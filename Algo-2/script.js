@@ -1,7 +1,7 @@
 function EndsWithZero(){
     let count=0
-    for(let i=1; i<=999;i++){
-        if(i%100==0){
+    for(let i=100; i<=999;i++){
+        if(i%10==0){
             count++
         }
     }
