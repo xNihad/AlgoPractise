@@ -1,11 +1,11 @@
 let str = "LawbinOp"
 let vowels = ["a", "e", "i", "o" , "u", "A" ,"E", "I", "O", "U"]
 
-function ReverseString(a){
+function ReverseString(a,b){
     count=0
-    for(let i=0; i<str.length;i++){
-        for(let j=0;j<vowels.length;j++){
-            if(str[i]==vowels[j]){
+    for(let i=0; i<a.length;i++){
+        for(let j=0;j<b.length;j++){
+            if(a[i]==b[j]){
                 count++
             }
         }
@@ -13,5 +13,5 @@ function ReverseString(a){
     return count
     
 }
-let res = ReverseString(str)
+let res = ReverseString(str,vowels)
 console.log(res);
