@@ -1,14 +1,17 @@
-let arr = [0,1,2,3,4,5,67]
+let str = "LawbinOp"
+let vowels = ["a", "e", "i", "o" , "u", "A" ,"E", "I", "O", "U"]
 
-function SumOfNumbers(a){
-    let max=1
-    for(let i=0; i<arr.length;i++){
-        if(a[i]>max){
-            max=a[i]   
+function ReverseString(a){
+    count=0
+    for(let i=0; i<str.length;i++){
+        for(let j=0;j<vowels.length;j++){
+            if(str[i]==vowels[j]){
+                count++
+            }
         }
     }
-    return max
+    return count
     
 }
-let res = SumOfNumbers(arr)
+let res = ReverseString(str)
 console.log(res);
