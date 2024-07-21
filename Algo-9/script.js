@@ -1,14 +1,25 @@
-let arr = [0,1,2,3,4,5,67]
+let arr = [2, 4, 5, 6, 5, 3, 5, 24, 4, 3 ]
+let duplicates = []
 
-function SumOfNumbers(a){
-    let max=1
-    for(let i=0; i<arr.length;i++){
-        if(a[i]>max){
-            max=a[i]   
-        }
+function dulicateNumbers(array){
+    for (let i = 0; i < array.length; i++) {
+        for(let j= 0; j<array.length;j++){
+            if(array[i]==array[j] && i!=j){
+                let alreadyAdded = false
+                for(let k = 0; k<duplicates.length;k++){
+                    if(duplicates[k]==array[i]){
+                        alreadyAdded=true
+                    }
+                }
+                if(!alreadyAdded){
+                    duplicates.push(array[i])
+                }
+            } 
+        } 
     }
-    return max
-    
+    return duplicates
 }
-let res = SumOfNumbers(arr)
-console.log(res);
+dulicateNumbers(arr)
+console.log(duplicates);
+
+
