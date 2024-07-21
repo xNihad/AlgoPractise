@@ -1,14 +1,15 @@
-let arr = [0,1,2,3,4,5,67]
+//13.Bir funksiya yazın.Bu funksiya string tipində bir parametr qəbul etsin və
+// onun palindrom olub-olmamasını tapsın.
 
-function SumOfNumbers(a){
-    let max=1
-    for(let i=0; i<arr.length;i++){
-        if(a[i]>max){
-            max=a[i]   
-        }
-    }
-    return max
-    
+let polindrom = (str)=>{
+   let reverseString = ""
+   for(let i=str.length-1;i>=0;i--){
+        reverseString+=str[i]
+        if(reverseString == str) return true;
+   }
+
+   return false
 }
-let res = SumOfNumbers(arr)
+let plndrm = "salasass"
+let res = polindrom(plndrm)
 console.log(res);
