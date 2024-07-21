@@ -1,14 +1,20 @@
-let arr = [0,1,2,3,4,5,67]
+// 12.Bir funksiya yazın.Bu funksiya number tipində bir parametr qəbul etsin və 
+// onun vurma cədvəlini qaytarsın.
 
-function SumOfNumbers(a){
-    let max=1
-    for(let i=0; i<arr.length;i++){
-        if(a[i]>max){
-            max=a[i]   
-        }
+let mutiplicationTable = (num)=>{
+    for(let i = 1;i<=10;i++ ){
+        console.log(`${num} x ${i} = ${num*i}`);
     }
-    return max
-    
 }
-let res = SumOfNumbers(arr)
-console.log(res);
+mutiplicationTable(7)
+
+// let multiplicationTable = (num) => {
+//     let table = [];
+//     for (let i = 1; i <= 10; i++) {
+//         table.push(`${num} x ${i} = ${num * i}`);
+//     }
+//     return table;
+// }
+
+// let res = multiplicationTable(7);
+// res.forEach(line => console.log(line));
