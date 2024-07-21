@@ -19,6 +19,6 @@ let confuse = (arr, num)=>{
     } 
 }
 let arrayx = [1,2,3,4,5,6,7,8,9,10]
-let numberx = 5040
+let numberx = 2520
 let res = confuse(arrayx, numberx)
 console.log(res);
